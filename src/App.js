@@ -75,7 +75,7 @@ export default function App () {
         </div>
         <div className='form-group'>
           <label htmlFor='amount'>Number Of Questions</label>
-          <input type='number' id='amount' min='1' step='1' defaultValue={10} ref={amountEl} />
+          <input type='number' id='amount' min='1' step='1' defaultValue={16} ref={amountEl} />
         </div>
         <div className='form-group'>
           <button className='btn'>Generate</button>
