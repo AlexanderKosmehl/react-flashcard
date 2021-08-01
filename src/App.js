@@ -55,7 +55,7 @@ export default function App () {
           return {
             id: `${index}-${Date.now}`,
             question: decodeString(questionItem.question),
-            answer: questionItem.correct_answer,
+            answer: decodeString(questionItem.correct_answer),
             options: options.sort(() => Math.random() - 0.5)
           }
         }))
