@@ -8,6 +8,10 @@ export default function Flashcard ({ flashcard }) {
   const frontEl = useRef()
   const backEl = useRef()
 
+  useEffect(() => {
+    setFlip(false)
+  }, [flashcard])
+
   function setMaxHeight () {
     const frontHeight = frontEl.current.getBoundingClientRect().height
     const backHeight = backEl.current.getBoundingClientRect().height
