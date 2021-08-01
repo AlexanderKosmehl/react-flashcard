@@ -21,7 +21,8 @@ export default function App () {
   }, [])
 
   useEffect(() => {
-    setFlashcards(JSON.parse(window.localStorage.getItem(LOCALSTORAGE_KEY)))
+    const oldFlashcards = JSON.parse(window.localStorage.getItem(LOCALSTORAGE_KEY))
+    if (oldFlashcards) setFlashcards(oldFlashcards)
   }, [])
 
   useEffect(() => {
